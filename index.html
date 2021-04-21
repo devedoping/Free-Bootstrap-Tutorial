@@ -11,14 +11,27 @@
 </head>
 <body>
     <div class="container">
-        <div class="row">
-            <div class="col-lg col-md-6 bg-primary">
+        <div class="row align-items-center" style="height: 200px;">
+            <div class="col-lg col-md-6 bg-primary order-lg-1 order-md-2 order-2">
                 One of three columns
             </div>
-            <div class="col-lg col-md-3 bg-warning">
+            <div class="col-lg col-md-3 bg-warning order-lg-2 order-md-1 order-1">
                 One of three columns
             </div>
-            <div class="col-lg col-md-3 bg-success">
+            <div class="col-lg col-md-3 bg-success order-lg-3 order-3">
+                One of three columns
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-6 bg-success">my column</div>
+        </div>
+
+        <div class="row align-items-center" style="height: 100px;">
+            <div class="col-lg-4 offset-lg-4 col-md-3 bg-warning">
+                One of three columns
+            </div>
+            <div class="col-lg-2 offset-lg-2 col-md-3 bg-success">
                 One of three columns
             </div>
         </div>
