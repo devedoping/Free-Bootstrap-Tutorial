@@ -1,4 +1,13 @@
-#top-section {
+section {
     padding-top: 80px;
     padding-bottom: 80px;
+}
+
+.center-section {
+    text-align: center;
+}
+
+footer {
+    background: #8dadc9;
+    height: 77px;
 }
