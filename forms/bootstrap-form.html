@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="../bootstrap.min.css" rel="stylesheet"/>
+    <title>Free Bootstrap Tutorial</title>
+</head>
+<body>
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-6">
+            <h1>Typical Form in HTML</h1>
+        </div>
+    </div>
+    <br/>
+    <div class="row justify-content-center">
+        <div class="col-6">
+
+            <form>
+                <div class="mb-3">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label for="about">About:</label>
+                    <textarea id="about" class="form-control"></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="your-id">Your ID:</label>
+                    <input type="text" readonly value="000123xyz" id="your-id" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label for="key">Secure Key:</label>
+                    <input type="text" disabled id="key" value="6216f3a2d75b4b87bdb7bcba550b04f4" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label for="file">Upload Your CV</label>
+                    <input type="file" id="file" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label for="gender">Your Gender:</label>
+                    <select id="gender" class="form-control">
+                        <option selected>Choose your gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label>Your Job:</label>
+                    <div class="form-check">
+                        <input type="checkbox" id="checkbox-1" name="department" value="frontend" class="form-check-input">
+                        <label for="checkbox-1">Frontend Developer</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" id="checkbox-2" name="department" value="backend" class="form-check-input">
+                        <label for="checkbox-2">Backend Developer</label>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label>Type of Cooperation:</label>
+                    <div class="form-check">
+                        <input type="radio" id="radio-full" name="cooperation" value="full" class="form-check-input">
+                        <label for="radio-full">Full-Time</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" id="radio-part" name="cooperation" value="part" class="form-check-input">
+                        <label for="radio-part">Part-Time</label>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="skill-score">Your Skill Score</label>
+                    <input type="range" id="skill-score" class="form-range">
+                </div>
+            </form>
+
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap JavaScript -->
+<script src="bootstrap.bundle.min.js"></script>
+</body>
+</html>

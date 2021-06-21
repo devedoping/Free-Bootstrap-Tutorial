@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="../bootstrap.min.css" rel="stylesheet"/>
+    <title>Free Bootstrap Tutorial</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-8">
+                <h1>Typical Form in HTML</h1>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-8">
+
+                <form>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name">
+                    <br/>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email">
+                    <br/>
+                    <label for="about">About:</label>
+                    <textarea id="about"></textarea>
+                    <br/>
+                    <label for="your-id">Your ID:</label>
+                    <input type="text" readonly value="000123xyz" id="your-id">
+                    <br/>
+                    <label for="key">Secure Key:</label>
+                    <input type="text" disabled id="key" value="6216f3a2d75b4b87bdb7bcba550b04f4">
+                    <br/>
+                    <label for="file">Upload Your CV</label>
+                    <input type="file" id="file">
+                    <br/>
+                    <label for="gender">Your Gender:</label>
+                    <select id="gender">
+                        <option selected>Choose your gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                    <br/>
+                    <label>Your Job:</label>
+                    <input type="checkbox" id="checkbox-1" name="department" value="frontend">
+                    <label for="checkbox-1">Frontend Developer</label><br/>
+                    <input type="checkbox" id="checkbox-2" name="department" value="backend">
+                    <label for="checkbox-2">Backend Developer</label><br/>
+                    <br/>
+                    <label>Type of Cooperation:</label>
+                    <input type="radio" id="radio-full" name="cooperation" value="full">
+                    <label for="radio-full">Full-Time</label><br>
+                    <input type="radio" id="radio-part" name="cooperation" value="part">
+                    <label for="radio-part">Part-Time</label><br>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="bootstrap.bundle.min.js"></script>
+</body>
+</html>
