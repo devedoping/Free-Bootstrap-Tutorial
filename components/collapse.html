@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="../bootstrap.min.css" rel="stylesheet"/>
+    <link href="../style.css" rel="stylesheet">
+    <title>Free Bootstrap Tutorial</title>
+</head>
+<body>
+    <br/>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-8">
+                <p>
+                    <a class="btn btn-primary" href="#myTarget" data-bs-toggle="collapse">Link with href</a>
+                    <button class="btn btn-info" data-bs-toggle="collapse" data-bs-target="#myTarget">Button with Collapse</button>
+                </p>
+                <div class="collapse" id="myTarget">
+                    <div class="card card-body">
+                        Some placeholder content for the collapse component. This panel is hidden by default but revealed when
+                        the user activates the relevant trigger.
+                    </div>
+                </div>
+
+                <hr/>
+
+                <p>
+                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1">Toggle first element</a>
+                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2">Toggle second element</button>
+                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse">Toggle both elements</button>
+                </p>
+                <div class="row">
+                    <div class="col">
+                        <div class="collapse multi-collapse" id="multiCollapseExample1">
+                            <div class="card card-body">
+                                Some placeholder content for the first collapse component of this multi-collapse example. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="collapse multi-collapse" id="multiCollapseExample2">
+                            <div class="card card-body">
+                                Some placeholder content for the second collapse component of this multi-collapse example. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- Bootstrap JavaScript -->
+<script src="../bootstrap.bundle.min.js"></script>
+</body>
+</html>
