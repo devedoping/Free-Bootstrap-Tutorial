@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="../bootstrap.min.css" rel="stylesheet"/>
+    <link href="../style.css" rel="stylesheet">
+    <title>Free Bootstrap Tutorial</title>
+</head>
+<body>
+    <br/>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-8">
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Open Modal</button>
+                <button class="btn btn-outline-success" id="modalButton">Open Modal by JavaScript</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" data-bs-backdrop="static">
+        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Modal Title</h5>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    What is Lorem Ipsum?
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-bs-dismiss="modal">Close Modal</button>
+                    <button class="btn btn-primary" id="saveButton">Save Changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- Bootstrap JavaScript -->
+<script src="../bootstrap.bundle.min.js"></script>
+
+<script>
+    var myModal = new bootstrap.Modal(document.getElementById('exampleModal'), {
+        keyboard: false
+    });
+
+    document.getElementById('modalButton').onclick = function (e) {
+        e.preventDefault();
+        myModal.show();
+    };
+
+    document.getElementById('saveButton').onclick = function (e) {
+        e.preventDefault();
+        myModal.hide();
+    };
+
+</script>
+
+</body>
+</html>
